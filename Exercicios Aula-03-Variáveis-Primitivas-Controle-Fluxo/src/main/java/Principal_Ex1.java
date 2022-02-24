@@ -16,7 +16,7 @@ public class Principal_Ex1 {
 
         //somando
         int i;
-        for(i = 0; i<=partida.length - 1;i++){
+        for(i = 0; i < partida.length ;i++){
             soma += partida[i];
         }
 
