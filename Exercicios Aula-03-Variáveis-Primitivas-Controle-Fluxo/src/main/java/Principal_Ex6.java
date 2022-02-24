@@ -21,7 +21,7 @@ public class Principal_Ex6 {
             //verificando se o numero é maior ou menor
             if(y < x){
                 System.out.println("Seu número é menor que o gerado!");
-            }else if(y > y){
+            }else if(y > x){
                 System.out.println("Seu número é maior que o gerado!");
             }
         }

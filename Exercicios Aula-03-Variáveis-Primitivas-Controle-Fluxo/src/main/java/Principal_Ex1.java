@@ -24,7 +24,7 @@ public class Principal_Ex1 {
         media = soma / i;
 
         //mostrando resultados
-        System.out.printf("Soma = " + soma + "\nMédia = " + media);
+        System.out.print("Soma = " + soma + "\nMédia = " + media);
 
     }
 }

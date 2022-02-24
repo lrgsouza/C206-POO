@@ -6,8 +6,8 @@ public class Principal_Ex3 {
 
         //declarando variáveis
         Scanner input = new Scanner(System.in);
-        int NPA = 0;
-        int NP3 = 0;
+        int NPA;
+        int NP3;
 
         //lendo NPA
         System.out.println("Entre com o valor da NPA:");
