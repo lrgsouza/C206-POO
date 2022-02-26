@@ -10,7 +10,7 @@ public class Zombicide02 {
 
         System.out.println("Vida inicial = " + z1.mostraVida());
 
-        System.out.println("zumbi levou dano de 50");
+        System.out.println("zumbi " + z1.nome + "levou dano de 50");
 
         z1.transfereVida(z1.nome, 50);
 
