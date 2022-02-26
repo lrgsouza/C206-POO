@@ -1,6 +1,7 @@
 public class Zombicide02 {
     public static void main(String[] args) {
 
+        int i = 0;
         Zumbi z1;
 
         z1 = new Zumbi();
@@ -15,7 +16,6 @@ public class Zombicide02 {
         z1.transfereVida(z1.nome, 50);
 
         System.out.println("Vida atual = " + z1.mostraVida());
-
 
 
     }
