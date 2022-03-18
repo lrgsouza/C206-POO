@@ -3,7 +3,7 @@ public class Time {
     Estadio estadio;
     String nome;
     String corCamisa;
-    Jogador[] jogador = new Jogador[10];
+    Jogador[] jogadores;
 
     //construtor
     public Time(String nome, String corCamisa){
@@ -22,30 +22,35 @@ public class Time {
         System.out.println("Nome do time: "+nome);
         System.out.println("Cor da Camisa: "+corCamisa);
         //info jogadores
-        for (int i = 0; i < jogador.length; i++) {
-            if (jogador[i]!=null){
-                jogador[i].mostraInfo();
+        for (int i = 0; i < jogadores.length; i++) {
+            if (jogadores[i]!=null){
+                jogadores[i].mostraInfo();
             }
         }
 
     }
-    void adicionaJogador(Jogador[] jogadores){
-        this.jogador = jogadores;
+    void adicionaJogador(Jogador jogador){
+        for (int i = 0; i < jogadores.length; i++) {
+            if (jogadores[i] == null){
+                jogadores[i] = jogador;
+                break;
+            }
+        }
     }
     double calculaTotalSalario(){
         double somaSalario = 0;
-        for (int i = 0; i < jogador.length; i++) {
-            if (jogador[i]!=null){
-                somaSalario += jogador[i].salario;
+        for (int i = 0; i < jogadores.length; i++) {
+            if (jogadores[i]!=null){
+                somaSalario += jogadores[i].salario;
             }
         }
         return somaSalario;
     }
     void mostraJogadoresBase(){
-        for (int i = 0; i < jogador.length; i++) {
-            if (jogador[i]!=null){
-                if (jogador[i].base){
-                    jogador[i].mostraInfo();
+        for (int i = 0; i < jogadores.length; i++) {
+            if (jogadores[i]!=null){
+                if (jogadores[i].base){
+                    jogadores[i].mostraInfo();
                 }
             }
         }

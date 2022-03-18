@@ -5,8 +5,8 @@ public class Main {
         //declarando variaveis/objetos
         Time time = new Time("Palmeiras","Verde e branca");
         Estadio estadio = new Estadio("Palestra Itália", 60000,"São Paulo - SP");
-        Jogador[] jogadores = new Jogador[10];
-        int nJogador = 0;
+        Jogador jogador;
+        time.jogadores = new Jogador[10];
 
         //agregando estadio ao time
         time.estadio = estadio;
@@ -30,25 +30,26 @@ public class Main {
             switch (opcao) {
                 case 1:
                     //instanciando novo jogador
-                    for (int i = 0; i < jogadores.length; i++) {
-                        if (jogadores[i] == null){
-                        jogadores[i] = new Jogador();
-                        System.out.println("Entrar com: Nome, Salário, Número da Camisa e base");
-                        jogadores[i].nome = input.nextLine();
-                        jogadores[i].salario = input.nextInt();
-                        input.nextLine();
-                        jogadores[i].nCamisa = input.nextInt();
-                        jogadores[i].base = input.nextBoolean();
-                        time.adicionaJogador(jogadores);
-                        break;
-                        }
-                    }
+                    jogador = new Jogador();
+                    System.out.println("Entrar com Nome:");
+                    jogador.nome = input.nextLine();
+                    System.out.println("Entrar com Salário:");
+                    jogador.salario = input.nextInt();
+                    input.nextLine();
+                    System.out.println("Entrar com Número da Camisa:");
+                    jogador.nCamisa = input.nextInt();
+                    input.nextLine();
+                    System.out.println("Entrar com nome Base:");
+                    jogador.base = input.nextBoolean();
+                    time.adicionaJogador(jogador);
                     break;
                 case 2:
                     time.mostraInfo();
                     break;
                 case 3:
-                    System.out.println("Salário total: "+time.calculaTotalSalario());
+                    System.out.println("=========================");
+                    System.out.println("Salário total: "+time.calculaTotalSalario()+" R$");
+                    System.out.println("=========================");
                     break;
                 case 4:
                     time.mostraJogadoresBase();
