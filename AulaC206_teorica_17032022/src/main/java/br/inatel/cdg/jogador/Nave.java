@@ -34,12 +34,6 @@ public class Nave {
                 }
                 break;
         }
-        /*
-        if (this.tipoTiro == "Normal" && ast.getTipoAsteroide() == "Pequeno"){
-            ast.destruir();
-        }else if (this.tipoTiro == "Explosivo" && ast.getTipoAsteroide() == "Grande"){
-            ast.destruir();
-        }*/
     }
     public void setVida(double vida) {
         this.vida = vida;
