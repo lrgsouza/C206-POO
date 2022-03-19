@@ -20,18 +20,14 @@ public class Nave {
     public void atirar(Asteroide ast){
         switch (this.tipoTiro){
             case "Normal":
-                if (ast.getTipoAsteroide() == "Pequeno"){
+                if (ast.getTipoAsteroide().equals("Explosivo")){
                     ast.destruir();
                 }else{
                     System.out.println("Tiro inefectivo!");
                 }
                 break;
             case "Explosivo":
-                if (ast.getTipoAsteroide() == "Grande"){
                     ast.destruir();
-                }else{
-                    System.out.println("Tiro inefectivo!");
-                }
                 break;
         }
     }

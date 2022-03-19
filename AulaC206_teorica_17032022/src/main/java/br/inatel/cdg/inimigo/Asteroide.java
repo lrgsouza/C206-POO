@@ -1,6 +1,5 @@
 package br.inatel.cdg.inimigo;
 //imports
-import br.inatel.cdg.jogador.Nave;
 
 public class Asteroide {
     //atributos
