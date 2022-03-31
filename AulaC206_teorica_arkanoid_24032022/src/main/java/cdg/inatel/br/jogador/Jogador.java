@@ -4,7 +4,7 @@ import cdg.inatel.br.Main;
 
 public class Jogador {
     //stributos
-    private static int pontuacao = 0;
+    private int pontuacao = 0;
 
     //construtor
     public Jogador(){
@@ -17,12 +17,7 @@ public class Jogador {
         pontuacao++;
     }
 
-    //conversor
-    public static int pointConverter(){
-        return pontuacao * 100;
-    }
-
-    public static int getPontuacao() {
+    public int getPontuacao() {
         return pontuacao;
     }
 }

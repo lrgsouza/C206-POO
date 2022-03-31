@@ -4,7 +4,7 @@ import cdg.inatel.br.Bloco.Bloco;
 public class Bloco {
 
     //private
-    public static int nBlocos = 0;
+    private static int nBlocos = 0;
 
     public Bloco(){
         nBlocos++;
@@ -13,5 +13,9 @@ public class Bloco {
 
     public void destruir(){
         nBlocos--;
+    }
+
+    public static int getnBlocos() {
+        return nBlocos;
     }
 }
