@@ -9,4 +9,8 @@ public class Estagiario extends Funcionario{
         System.out.println("café feito");
     }
 
+    @Override
+    public double calculoSalarioMes() {
+        return super.calculoSalarioMes();
+    }
 }
