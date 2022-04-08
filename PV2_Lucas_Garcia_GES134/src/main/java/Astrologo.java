@@ -15,9 +15,6 @@ public class Astrologo extends Personagem implements Magia, Cura{
     @Override
     public void passaLevel() {
         super.passaLevel();
-        this.vitalidade += 1;
-        this.fe += 1;
-        this.inteligencia += 1;
     }
 
     @Override

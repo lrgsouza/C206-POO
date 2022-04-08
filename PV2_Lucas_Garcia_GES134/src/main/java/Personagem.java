@@ -14,6 +14,7 @@ public abstract class Personagem {
     }
 
     public void mostraInfo(){
+        System.out.println("=========Dados do personagem==========");
         System.out.println("Nome: "+nome);
         System.out.println("Vitalidade: "+vitalidade);
         System.out.println("Inteligencia: "+inteligencia);
@@ -21,7 +22,11 @@ public abstract class Personagem {
         System.out.println("Arma: "+arma.getTipo());
     }
 
-    public void passaLevel(){}
+    public void passaLevel(){
+        this.vitalidade += 1;
+        this.fe += 1;
+        this.inteligencia += 1;
+    }
 
     public abstract void ganhaHabilidade();
 
