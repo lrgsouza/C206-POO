@@ -8,11 +8,13 @@ public class Main {
         personagem[1] = new Samurai("Matsui","Katana de sangue");
         personagem[2] = new Confessor("PadreQuevedo","Cruz andina");
 
+        //cabeçalho
+        System.out.println("======Elden Ring By FromSoftware======");
         //loop nos personagens
         for (int i = 0; i < personagem.length; i++) {
             if (personagem[i] != null){
-                System.out.println("====================================");
                 if (personagem[i] instanceof Astrologo){
+                    System.out.println(i+" ==============Astrologo=============");
                     Astrologo astrologo = (Astrologo) personagem[i];
                     //metodos
                     astrologo.passaLevel();
@@ -27,6 +29,7 @@ public class Main {
                     astrologo.mostraInfo();
                 }
                 if (personagem[i] instanceof Samurai){
+                    System.out.println(i+" ===============Samurai==============");
                     Samurai samurai = (Samurai) personagem[i];
                     //metodos
                     samurai.passaLevel();
@@ -38,6 +41,7 @@ public class Main {
                     samurai.mostraInfo();
                 }
                 if (personagem[i] instanceof Confessor){
+                    System.out.println(i+" ==============Confessor=============");
                     Confessor confessor = (Confessor) personagem[i];
                     //metodos
                     confessor.passaLevel();
@@ -52,7 +56,7 @@ public class Main {
             }
         }
         //mostrando quantidade de personagens
-        System.out.println("====================================");
+        System.out.println("======================================");
         System.out.println("Quantidade de personagens criados: "+Personagem.contador);
 
     }
