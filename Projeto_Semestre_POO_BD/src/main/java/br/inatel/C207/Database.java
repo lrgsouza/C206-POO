@@ -30,12 +30,12 @@ public class Database {
     }
 
     // =====> TRUNCATE TABLE <=======
-    public boolean truncateTable(String user){
+    public boolean truncateTable(String table){
         connect();
         String sql = "TRUNCATE ?;";
         try {
             pst = connection.prepareStatement(sql);
-            pst.setString(1, user);
+            pst.setString(1, table);
             pst.execute();
             check = true;
         } catch (SQLException e) {
