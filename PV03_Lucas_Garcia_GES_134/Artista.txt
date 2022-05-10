@@ -1,0 +1,15 @@
+Artista
+Guns n Roses
+5000000
+Sweet child o mine
+true
+Artista
+Legião urbana
+20000
+Faroeste Caboclo
+false
+Artista
+Pink Floyd
+100000000
+Another brick in the wall
+true
