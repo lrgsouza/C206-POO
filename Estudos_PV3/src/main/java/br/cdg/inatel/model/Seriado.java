@@ -51,6 +51,7 @@ public class Seriado implements Comparable<Seriado>{
 
     @Override
     public int compareTo(Seriado o) {
-        return nome.compareTo(o.nome);
+
+        return Integer.compare(this.anoCriacao,o.anoCriacao);
     }
 }

@@ -17,18 +17,17 @@ public class Main {
         seriado.setAnoCriacao(2002);
         seriado.setTemporadas(5);
         //escrevendo no arquivo
-        arquivo.escrever(seriado);
+        //arquivo.escrever(seriado);
         //++
         seriado.setNome("The office");
         seriado.setStreaming("HBO plus");
         seriado.setAnoCriacao(1998);
         seriado.setTemporadas(1);
         //escrevendo no arquivo
-        arquivo.escrever(seriado);
+        //arquivo.escrever(seriado);
 
         //lendo arquivo
-        ArrayList<Seriado> seriados = new ArrayList<Seriado>();
-        seriados = arquivo.ler();
+        ArrayList<Seriado> seriados = arquivo.ler();
 
         //ordenando crescente
         Collections.sort(seriados);
@@ -52,7 +51,6 @@ public class Main {
             System.out.println("Ano de Lançamento:"+s.getAnoCriacao());
             System.out.println("Numero de temporadas:"+s.getTemporadas());
         }
-
 
     }
 }
