@@ -21,8 +21,18 @@ public class Main {
         conta2.mostraInfo();
         conta3.mostraInfo();
 
+        //sacando
+        try {
+            sacar(conta1,800);
+        }catch (SaldoInsuficienteException e){
+            System.out.println(e.getMessage());
+        }
+
         //finalizando
         System.out.println("Terminei");
 
+    }
+    private static void sacar(Conta c, int qnt) throws SaldoInsuficienteException {
+        c.sacar(qnt);
     }
 }

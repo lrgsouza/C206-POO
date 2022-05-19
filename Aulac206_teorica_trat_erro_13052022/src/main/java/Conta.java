@@ -11,9 +11,12 @@ public class Conta {
         clientes.add(cliente);
     }
 
-    public boolean sacar(double quantia){
-        this.saldo -= quantia;
-        return true;
+    public void sacar(double quantia) throws SaldoInsuficienteException{
+        if (quantia < (saldo+limite)) {
+            this.saldo -= quantia;
+        }else {
+            throw new SaldoInsuficienteException("Saldo Insuficiente");
+        }
     }
 
     public void mostraInfo(){
