@@ -25,11 +25,11 @@ public class Conta {
                 System.out.println("CPF :" + c.getCpf());
             } catch (NullPointerException e) {
                 System.out.println("Erro: " + e);
+                System.out.println("Não existe cliente nesta posição!");
             }finally {
                 System.out.println("");
             }
         }
-
 
     }
 
